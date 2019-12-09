@@ -1,0 +1,134 @@
+<html>
+
+<head>
+	<title>INICIO</title>
+	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+	<link rel="stylesheet" type="text/css" href="static/css/flexboxgrid.css">
+
+	<link rel="stylesheet" href="static/css/jquery.bxslider.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="static/js/jquery.bxslider.min.js"></script>
+	
+	<script>
+			$(document).ready(function(){
+			  $('.slider').bxSlider();
+			});
+		  </script>
+
+</head>
+
+
+
+<body>
+	 <!-- SECCION: MENU 1-->
+	<div class="row">  
+	
+		<div class="col-xs-12 col-lg-12"	> <!-- CASILLA: COL-TAMAÑO-CANTIDAD-->
+			<div class="box"><a href="{% url 'index' %}"><img src="static/images/logo.png" width="55%" height="110px"></a></div> <!-- INSERTAR AL CENTRO DE LA CASILLA -->
+			
+		</div>
+		
+		<div class="col-xs-12 col-lg-3"	> <!-- link 1-->
+			<div class="box"><li><a href="{% url 'index' %}">Inicio</a></li></div> 
+		</div>
+		<div class="col-xs-12 col-lg-3"	> <!-- link 1-->
+			<div class="box"><li><a href="{% url 'admin:index' %}">Login</a></li></div> 
+		</div>
+		
+		<div class="col-xs-12 col-lg-2"	> <!-- link 2-->
+			<div class="box"><li><a href="{% url 'about' %}" >Quienes Somos</a></li></div>  
+		</div>
+		
+		<div class="col-xs-12 col-lg-2"	> <!-- link 3-->
+			<div class="box"><li><a href="{% url 'noticias' %}" >Noticias</a></li></div>
+		</div>
+        
+        <div class="col-xs-12 col-lg-2"	> <!-- link 4-->
+			<div class="box"><li><a href="{% url 'eventos' %}" >Eventos</a></li></div>
+		</div>
+		
+		<div class="col-xs-12 col-lg-3"	> <!-- link 5-->
+			<div class="box"><li><a href="{% url 'formulario' %}" >Contactanos</a></li></div>
+		</div>
+		
+		
+	</div>
+	
+
+
+	
+	<!-- SECCION: BANNER 2-->
+	<div class="slider">
+	    <div>
+		   <div class="carrusel"></class><li><a href="https://www.metallica.com" ><img src="static/images/metallica.jpg" width="95%"></a></li></div>
+		</div>
+		
+		<div>
+		  <div class="carrusel"></class><li><a href="https://www.lollapaloozacl.com" ><img src="static/images/lolla.png" width="95%"></a></li>></div>
+		</div>
+		
+    </div>
+ 
+<!-- SECCION:
+ <div cl12 cass="col-xs-ol-lg-12">
+ <div class="slider">
+	
+		<div>
+	   <div class="carrusel"></class><img src="images/metallica.jpg" width="80%"></div>
+	</div>
+
+	<div>
+	  <div class="carrusel"><img src="images/lolla.png" width="95%" height="95%"></div>
+	</div>
+	</div>
+</div>
+-->
+
+	<!-- SECCION: INFORMACION 3-->
+
+	
+	<!-- SECCION: Proximos Eventos  -->
+	<div class="row">  
+		<div class="col-xs-12 col-lg-6">
+			<div class="box"><a href="eventos.html" >Proximos Eventos</a></div>
+			<div class="box"><img src="static/images/badbunny.png" width="220px" height="100px">  Vuelve Badbunny!</div>
+			<div class="box"><img src="static/images/scorpions.jpg" width="220px" height="100px">  Preparate para Scorpions</div>
+			<div class="box"><img src="static/images/backstreet.png" width="220px" height="100px">  Backstreet's back!</div>
+		</div>
+        
+        
+
+
+	<div class="col-xs-12 col-lg-6">
+			<div class="box"><a href="Noticias.html" >Noticias</a></div>
+			<div class="box"><img src="static/images/camilo.jpg" width="220px" height="100px"> Muere el cantante espanol Camilo Sesto a los 72 años</div>
+			<div class="box"><img src="static/images/monlaferte.jpg" width="220px" height="100px"> Mon Laferte es confirmada para el festival Vina 2020</div>
+			<div class="box"><img src="static/images/slash.jpg" width="220px" height="100px"> Slash confirma que Guns N' Roses lanzara nuevo disco</div>
+	
+	
+		</div>
+			
+		
+    </div>
+
+
+
+
+
+
+	<!-- SECCION: PIE DE PAGINA 5-->
+
+		<div class="row">  	
+			<div class="col-xs-12 col-lg-12">
+				<div class="footer-box">Desarrollo web Unidad 1</div>
+			</div>
+		</div>
+
+	
+	
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,143 @@
+{%load static%}
+<html>
+		
+<head>
+	<title>EVENTOS</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/flexboxgrid.css'%}">
+	
+</head>
+
+
+
+<body background="{% static 'images/guitar.jpg'%}">
+	 <!-- SECCION: MENU 1-->
+	<div class="row">  
+	
+		<div class="col-xs-12 col-lg-12"	> <!-- CASILLA: COL-TAMAÑO-CANTIDAD-->
+			<div class="box"><a href="{% url 'index' %}"><img src="{% static '/images/logo.png'%}" width="55%" height="110px"></a></div>  <!-- INSERTAR AL CENTRO DE LA CASILLA -->
+			
+		</div>
+		
+		<div class="col-xs-12 col-lg-3"	> <!-- link 1-->
+			<div class="box"><li><a href="{% url 'index' %}">Inicio</a></li></div> 
+		</div>
+
+		<div class="col-xs-12 col-lg-3"	> <!-- link 1-->
+			<div class="box"><li><a href="{% url 'admin:index' %}">Login</a></li></div> 
+		</div>
+
+		<div class="col-xs-12 col-lg-2"	> <!-- link 2-->
+			<div class="box"><li><a href="{% url 'about' %}" >Quienes Somos</a></li></div>  
+		</div>
+		
+		<div class="col-xs-12 col-lg-2"	> <!-- link 3-->
+			<div class="box"><li><a href="{% url 'noticias' %}" >Noticias</a></li></div>
+		</div>
+        
+        <div class="col-xs-12 col-lg-2"	> <!-- link 4-->
+			<div class="box"><li><a href="{% url 'eventos' %}" >Eventos</a></li></div>
+		</div>
+		
+		<div class="col-xs-12 col-lg-3"	> <!-- link 5-->
+			<div class="box"><li><a href="{% url 'formulario' %}" >Contactanos</a></li></div>
+		</div>
+		
+		
+	</div>
+        
+            <div class="row">
+                    <div class="col-xs-12 col-lg-4">
+                        
+                    <div class="box">
+                        
+                        <h3>SCORPIONS EN CHILE </h3>
+                        <p>El dia 26 de octubre vendra a chile la renombrada banda "Scorpions",</p>
+                        <p>los puntos de ventas principales seran dos.</p>
+                        <p>Puntoticket y ticketmaster.</p>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <div class="box"><img src="{% static 'images/scorpions.jpg'%}" width="55%" height="110px"></div> 
+                        
+            
+            </div>
+                </div>
+            
+            
+            <div class="col-xs-12 col-lg-4">			
+                <div class="box">
+                        <h3> BAD BUNNY EN CHILE</h3>
+                        <p>En septiembre vendra el rey del trap , "Bad Bunny",</p>
+                        <p>los puntos de venta oficiales seran dos.</p>
+						<p>Puntoticket y ticketmaster.</p>
+						<br>
+                        <br>
+						<br>
+						<br>
+                        <br>
+                        
+                        <div class="box"><img src="{% static 'images/badbunny.png' %}" width="55%" height="110px"></div> 
+            
+                </div>	
+            </div>
+            
+            
+            <div class="col-xs-12 col-lg-4">
+                 
+                    
+            <div class="box"> 
+                <h3> LA VUELTA DE LOS REYES DEL POP</h3>
+                <p>El 2020 vendran los reyes del pop , los "Backstreet Boys",</p>
+                <p>el punto de venta oficial seran dos.</p>
+                <p>Puntoticket y Feriaticket</p>
+				<br>
+				<br>
+				<br>
+				<br>
+                <br>
+                <div class="box"><img src="{% static 'images/backstreet.png' %}" width="55%" height="110px"></div> 
+            
+            
+                </div>
+            
+            
+            
+            
+                </div>
+                </div>
+        
+        
+		
+	
+	<!-- SECCION: PIE DE PAGINA 5-->
+	<div class="row">  	
+		<div class="col-xs-12 col-lg-12">
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<div class="footer-box">Desarrollo web Unidad 1</div>
+		</div>
+	
+	</div>
+	
+	
+	
+
+
+</body>
+
+
+</html>

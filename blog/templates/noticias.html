@@ -1,0 +1,136 @@
+{%load static%}
+<html>
+		
+<head>
+	<title>NOTICIAS</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/flexboxgrid.css'%}">
+	
+</head>
+
+
+
+<body background="{% static 'images/guitar.jpg'%}">
+	 <!-- SECCION: MENU 1-->
+	<div class="row">  
+	
+		<div class="col-xs-12 col-lg-12"	> <!-- CASILLA: COL-TAMAÑO-CANTIDAD-->
+			<div class="box"><a href="{% url 'index' %}"><img src="{% static '/images/logo.png'%}" width="55%" height="110px"></a></div>  <!-- INSERTAR AL CENTRO DE LA CASILLA -->
+			
+		</div>
+		
+		<div class="col-xs-12 col-lg-3"	> <!-- link 1-->
+			<div class="box"><li><a href="{% url 'index' %}">Inicio</a></li></div> 
+		</div>
+
+		<div class="col-xs-12 col-lg-3"	> <!-- link 1-->
+			<div class="box"><li><a href="{% url 'admin:index' %}">Login</a></li></div> 
+		</div>
+
+		<div class="col-xs-12 col-lg-2"	> <!-- link 2-->
+			<div class="box"><li><a href="{% url 'about' %}" >Quienes Somos</a></li></div>  
+		</div>
+		
+		<div class="col-xs-12 col-lg-2"	> <!-- link 3-->
+			<div class="box"><li><a href="{% url 'noticias' %}" >Noticias</a></li></div>
+		</div>
+        
+        <div class="col-xs-12 col-lg-2"	> <!-- link 4-->
+			<div class="box"><li><a href="{% url 'eventos' %}" >Eventos</a></li></div>
+		</div>
+		
+		<div class="col-xs-12 col-lg-3"	> <!-- link 5-->
+			<div class="box"><li><a href="{% url 'formulario' %}" >Contactanos</a></li></div>
+		</div>
+		
+		
+	</div>
+
+
+
+
+	<div class="row">
+		<div class="col-xs-12 col-lg-4">
+			
+			<div class="box">
+			
+				<h3>Mon Laferte es confirmada para la nueva version del festival de vina 2020</h3>
+				<p>por segunda vez la artista nacional estara en la quinta vergara, aunque su anuncio provoco controversias</p>
+				<p>muchos se quejaron e incluso se burlaron de su afiche, por la mala calidad de este, y fue objetivo de muchos memes</p>
+				<br>
+				<br>
+				<div class="box"><img src="{% static '/images/monlaferte.jpg' %}" width="55%" height="110px"></div> 
+			
+			</div>
+		</div>
+		<div class="col-xs-12 col-lg-4">
+			{%for post in post%}
+			<div class="box">
+				<p> publicado:{{ post.published_date}}</p>
+				<h3><a href="">{{ post.title }}</a></h3>
+				<p>{{post.text|linebreaksbr}}</p>
+			</div>
+			{%endfor%}
+		</div>
+
+
+		<div class="col-xs-12 col-lg-4">			
+		<div class="box">
+			<h3>Muere el cantante español Camilo Sesto a los 72 años</h3>
+			<p>Un fallo renal provocó la muerte del cantante español Camilo Sesto la pasada noche en el Hospital Universitario Quirónsalud Madrid, en la capital de España</p>
+			<p>El cantante español Camilo Sesto, conocido por sus baladas de amor y que vendió millones de discos durante su carrera, falleció a los 72 años, anunció este sábado su familia. </p>
+			<div class="box"><img src="{% static '/images/camilo.jpg'%}" width="55%" height="110px"></div> 
+
+		</div>	
+		</div>
+
+
+<div class="col-xs-12 col-lg-4">
+	 
+		
+			
+		<div class="box">
+			<h3>Slash confirma que Guns N' Roses lanzara nuevo disco</h3>
+			<p>Un nuevo álbum de estudio de Guns n' Roses está en camino y eso ya lo han reconocido los integrantes del grupo en diferentes ocasiones </p>
+			<p>Este trabajo contará con los tres miembros originales Axl, Slash y Duff por primera vez desde el álbum 'The spaguetti incident?' (1993)</p>
+			<div class="box"><img src="{% static '/images/slash.jpg'%}" width="55%" height="110px"></div> 
+
+		</div>	
+
+
+</div>
+
+	</div>	
+	
+	
+	<!-- SECCION: PIE DE PAGINA 5-->
+	<div class="row">  	
+			<div class="col-xs-12 col-lg-12">
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<div class="footer-box">Desarrollo web Unidad 1</div>
+			</div>
+		
+		</div>
+		
+		
+	
+	
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,126 @@
+{%load static%}
+<html>
+		
+<head>
+	<title>CONTACTE CON NOSOTROS</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/flexboxgrid.css'%}">
+	
+</head>
+
+
+
+<body background="{% static 'images/guitar.jpg'%}">
+	 <!-- SECCION: MENU 1-->
+	<div class="row">  
+	
+		<div class="col-xs-12 col-lg-12"	> <!-- CASILLA: COL-TAMAÑO-CANTIDAD-->
+			<div class="box"><a href="{% url 'index' %}"><img src="{% static '/images/logo.png'%}" width="55%" height="110px"></a></div>  <!-- INSERTAR AL CENTRO DE LA CASILLA -->
+			
+		</div>
+		
+		<div class="col-xs-12 col-lg-3"	> <!-- link 1-->
+			<div class="box"><li><a href="{% url 'index' %}">Inicio</a></li></div> 
+		</div>
+
+		<div class="col-xs-12 col-lg-3"	> <!-- link 1-->
+			<div class="box"><li><a href="{% url 'admin:index' %}">Login</a></li></div> 
+		</div>
+
+
+		<div class="col-xs-12 col-lg-2"	> <!-- link 2-->
+			<div class="box"><li><a href="{% url 'about' %}" >Quienes Somos</a></li></div>  
+		</div>
+		
+		<div class="col-xs-12 col-lg-2"	> <!-- link 3-->
+			<div class="box"><li><a href="{% url 'noticias' %}" >Noticias</a></li></div>
+		</div>
+        
+        <div class="col-xs-12 col-lg-2"	> <!-- link 4-->
+			<div class="box"><li><a href="{% url 'eventos' %}" >Eventos</a></li></div>
+		</div>
+		
+		<div class="col-xs-12 col-lg-3"	> <!-- link 5-->
+			<div class="box"><li><a href="{% url 'formulario' %}" >Contactanos</a></li></div>
+		</div>
+		
+		
+	</div>
+
+
+
+
+	<div class="col-xs-12 col-lg-12">
+		<div class="box">
+    <form id="registration_form" action="#" method="post">
+            <h2>RELLENA ESTA FORMULARIO PARA CONTACTARNOS CON NOSOTROS</h2>
+              <div>Correo Electronico:<input type="email" class="form_text" name="email" id="email" required>
+                <span class="error" id="erroremail"></span>
+              </div>
+    
+              <div>Run : <input type="run" class="form_text" id="run" required>
+                <span class="error" id="errorrun"></span>
+              </div>
+    
+              <div>Nombre Completo : <input type="nombre" class="form_text" name="nombre" id="nombre" required>
+                <span class="error" id="errornombre"></span>
+              </div>
+    
+              <div>Fecha de Nacimiento : <input type="date" id="fecha"  required>
+                <span class="error" id="errorfecha"></span>
+              </div>
+    
+              <div>Telefono de Contacto : <input type="text" class="form_text" name="telefono" id="tele" required>
+                <span class="errortel" id="errortel"></span>
+              </div>
+    
+              <div>Comentario : <textarea class="form_text" id="comentario" rows="8" cols="50"></textarea>
+                <span class="error" id="errorrtxt"></span>
+              </div>
+              
+    
+                  <input type="submit" value="Enviar" class="btn-enviar" id="btn-enviar">
+    
+      </form>
+	</div>
+    </div>
+    
+        
+    
+    
+
+
+
+		
+	
+	
+	<!-- SECCION: PIE DE PAGINA 5-->
+	<div class="row">  	
+		<div class="col-xs-12 col-lg-12">
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<div class="footer-box">Desarrollo web Unidad 1</div>
+		</div>
+	
+	</div>
+	
+	
+	
+
+
+</body>
+
+
+</html>

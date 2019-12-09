@@ -1,0 +1,137 @@
+{%load static%}
+<html>
+		
+<head>
+	<title>QUIENES SOMOS</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/flexboxgrid.css'%}">
+	
+</head>
+
+
+
+<body background="{% static 'images/guitar.jpg'%}">
+	 <!-- SECCION: MENU 1-->
+	<div class="row">  
+	
+		<div class="col-xs-12 col-lg-12"	> <!-- CASILLA: COL-TAMAÑO-CANTIDAD-->
+			<div class="box"><a href="{% url 'index' %}"><img src="{% static '/images/logo.png'%}" width="55%" height="110px"></a></div>  <!-- INSERTAR AL CENTRO DE LA CASILLA -->
+			
+		</div>
+		
+		<div class="col-xs-12 col-lg-3"	> <!-- link 1-->
+			<div class="box"><li><a href="{% url 'index' %}">Inicio</a></li></div> 
+		</div>
+		
+		<div class="col-xs-12 col-lg-3"	> <!-- link 1-->
+			<div class="box"><li><a href="{% url 'admin:index' %}">Login</a></li></div> 
+		</div>
+		
+		<div class="col-xs-12 col-lg-2"	> <!-- link 2-->
+			<div class="box"><li><a href="{% url 'about' %}" >Quienes Somos</a></li></div>  
+		</div>
+		
+		<div class="col-xs-12 col-lg-2"	> <!-- link 3-->
+			<div class="box"><li><a href="{% url 'noticias' %}" >Noticias</a></li></div>
+		</div>
+        
+        <div class="col-xs-12 col-lg-2"	> <!-- link 4-->
+			<div class="box"><li><a href="{% url 'eventos' %}" >Eventos</a></li></div>
+		</div>
+		
+		<div class="col-xs-12 col-lg-3"	> <!-- link 5-->
+			<div class="box"><li><a href="{% url 'formulario' %}" >Contactanos</a></li></div>
+		</div>
+		
+		
+	</div>
+	
+
+	<div class="row">
+		<div class="col-xs-12 col-lg-4">
+			
+		<div class="box">
+			
+			<h3>¿Que es Music News?</h3>
+			<p>Aqui encontraras todo sobre noticias de musica, eventos y más</p>
+			<p>Somos un grupo de estudiantes de informatica que queremos compartir eventos y cosas interesantes sobre la musica</p>
+			<br>
+			<br>
+			<br>
+			<div class="box"><img src="{% static '/images/logo.png' %}" width="55%" height="110px"></div> 
+			
+
+</div>
+	</div>
+
+
+<div class="col-xs-12 col-lg-4">			
+	<div class="box">
+			<h3> Por que creamos esta pagina</h3>
+			<p>Es un trabajo de nuestro ramo desarrollo web.</p>
+			<p>nos gusta hablar de musica y compartir con los amantes de esto, además de planificar eventos para disfrutar</p>
+			<label>Vamos a trabajar todo este semestre en mejorar esta pagina y hacerla cada vez mas eficiente.</label>
+			<br>
+			<br>
+			<div class="box"><img src="{% static '/images/logo.png'%}" width="55%" height="110px"></div> 
+
+	</div>	
+</div>
+
+
+<div class="col-xs-12 col-lg-4">
+	 
+		
+<div class="box"> 
+		<h3> Integrantes</h3>
+	<p>Ariel Quinteros</p>
+	<p>Matias Baeza</p>
+	<p>Flavio Cornejo</p>
+	<br>
+	<br>
+	<div class="box"><img src="{% static 'images/logo.png'%}" width="55%" height="110px"></div> 
+
+
+	</div>
+
+
+
+
+	</div>
+	</div>
+
+
+
+		
+	
+	
+	<!-- SECCION: PIE DE PAGINA 5-->
+	<div class="row">  	
+		<div class="col-xs-12 col-lg-12">
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<div class="footer-box">Desarrollo web Unidad 1</div>
+		</div>
+	
+	</div>
+	
+	
+	
+
+
+</body>
+
+
+</html>
